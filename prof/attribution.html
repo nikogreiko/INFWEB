@@ -1,0 +1,120 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Attribution des rôles</title>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <script src="../javascript/main.js" charset="UTF-8"></script>
+        <script src="../javascript/attribution.js" charset="UTF-8"></script>
+    </head>
+    <body>
+        <div id="enveloppe">
+            <div id="titre">
+                <h1>INF2005: Programmation Web</h1>
+            </div>
+            <div id="ensemble">
+                <div id="menugauche">
+                    <h2>Menu</h2>
+                    <h3><a href="index.html">Accueil</a></h3>
+                    <h3><a href="charger_liste.html">Charger une liste d'étudiants</a></h3>
+                    <h3><a href="liste.html">Liste des étudiants</a></h3>
+                    <h3><a href="gerer_sections.html">Gérer les sections</a></h3>
+                    <h3><a href="gerer_ressources.html">Gérer les ressources</a></h3>
+                    <h3><a href="gerer_activites.html">Gérer les activités</a></h3>
+                    <h3><a href="attribution.html">Attribution des rôles</a></h3>
+                    <h3><a href="courriel.html">Envoyer un courriel au groupe</a></h3>
+                </div>
+                <div id="contenu">
+                    <h2>Attribution des rôles</h2>
+                    <form action="">
+                        <table>
+                            <tr>
+                                <td class="textcentre">Étudiants:</td>
+                                <td></td>
+                                <td class="textcentre">Démonstrateurs:</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                <select class="attribution" name="etudiant" multiple="multiple" size="20">
+                                    <option>étudiant 1</option>
+                                    <option>étudiant 2</option>
+                                    <option>étudiant 3</option>
+                                    <option>étudiant 4</option>
+                                    <option>étudiant 5</option>
+                                    <option>étudiant 6</option>
+                                    <option>étudiant 7</option>
+                                    <option>étudiant 8</option>
+                                    <option>étudiant 9</option>
+                                    <option>étudiant 10</option>
+                                    <option>étudiant 11</option>
+                                    <option>étudiant 12</option>
+                                    <option>étudiant 13</option>
+                                    <option>étudiant 14</option>
+                                    <option>étudiant 15</option>
+                                    <option>étudiant 16</option>
+                                    <option>étudiant 17</option>
+                                    <option>étudiant 18</option>
+                                    <option>étudiant 19</option>
+                                    <option>étudiant 20</option>
+                                    <option>étudiant 21</option>
+                                    <option>étudiant 22</option>
+                                    <option>étudiant 23</option>
+                                    <option>étudiant 24</option>
+                                    <option>étudiant 25</option>
+                                    <option>étudiant 26</option>
+                                    <option>étudiant 27</option>
+                                    <option>étudiant 28</option>
+                                    <option>étudiant 29</option>
+                                    <option>étudiant 30</option>
+                                    <option>étudiant 31</option>
+                                    <option>étudiant 32</option>
+                                    <option>étudiant 33</option>
+                                    <option>étudiant 34</option>
+                                    <option>étudiant 35</option>
+                                    <option>étudiant 36</option>
+                                    <option>étudiant 37</option>
+                                    <option>étudiant 38</option>
+                                    <option>étudiant 39</option>
+                                    <option>étudiant 40</option>
+                                    <option>étudiant 41</option>
+                                    <option>étudiant 42</option>
+                                    <option>étudiant 43</option>
+                                    <option>étudiant 44</option>
+                                    <option>étudiant 45</option>
+                                    <option>étudiant 46</option>
+                                    <option>étudiant 47</option>
+                                    <option>étudiant 48</option>
+                                    <option>étudiant 49</option>
+                                    <option>étudiant 50</option>
+                                </select></td>
+                                <td class="textcentre">
+                                <input class="changerrole" type="button" name="versdemo" value="&#8594;">
+                                <input class="changerrole" type="button" name="versetudiant" value="&#8592;">
+                                </td>
+                                <td>
+                                <select class="attribution" name="demonstrateur" multiple="multiple" size="20">
+                                    <option>démonstrateur 1</option>
+                                    <option>démonstrateur 2</option>
+                                    <option>démonstrateur 3</option>
+                                </select></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div id="menudroite">
+                    <h2>Bienvenue</h2>
+                    <span>Bienvenue,</span>
+                    <br>
+                    <span id="bienvenue"></span>
+                    <br>
+                    <br>
+                    <input type="button" name="deconnexion" value="Déconnexion" onclick="deconnexion();">
+                </div>
+            </div>
+        </div>
+        <script>
+            afficherNom();
+        </script>
+    </body>
+</html>

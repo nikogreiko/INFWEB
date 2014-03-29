@@ -1,0 +1,218 @@
+/**************************************************
+ *         Styles pour l'ensemble des pages
+ **************************************************/
+
+body {
+    background-color: #202020;
+    color: white;
+}
+
+a:link {
+    color: #00FF00;
+}
+
+a:visited {
+    color: #00FF00;
+}
+
+a:hover {
+    color: red;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: orange;
+    font-size: 33pt
+}
+
+legend {
+    text-align: center;
+    color: white;
+    font-family: "Arial Black";
+}
+
+h2 {
+    color: rgb(248, 187, 0);
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+select {
+    background-color: black;
+    color: white;
+}
+
+label {
+    display: inline-block;
+    margin-right: 0px;
+    text-align: center;
+}
+
+textarea {
+    resize: none;
+}
+
+.afficherGrasSouligneBleu {
+    text-decoration: underline;
+    font-weight: bolder;
+    color: blue;
+}
+
+/**************************************************
+ *     Styles pour la page d'authetification
+ *    et la demande d'un nouveau mot de passe
+ **************************************************/
+
+div#entete {
+    background-color: #606060;
+    border-style: solid;
+    border-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    text-align: center;
+    width: 800px;
+}
+
+div#bigbox {
+    background-color: #404040;
+    margin-right: auto;
+    margin-left: auto;
+    border-style: solid;
+    border-color: white;
+    margin-top: 60px;
+    height: 425px;
+    width: 800px;
+}
+
+fieldset.box1and2 {
+    background-color: #6E6E6E;
+}
+
+div#box1 {
+    text-align: center;
+    margin: 30px 0px 50px 90px;
+    width: 35%;
+    float: left;
+}
+
+div#seconnecter {
+    text-align: justify;
+}
+
+div#box1_2 {
+    text-align: center;
+    margin: auto;
+    margin-top: 95px;
+    width: 30%;
+}
+
+div#box2 {
+    text-align: center;
+    width: 30%;
+    margin: 30px 0px 50px 140px;
+    float: left;
+}
+
+a.authen:link {
+    color: yellow;
+}
+
+a.authen:visited {
+    color: yellow;
+}
+
+/**************************************************
+ *      Style pour toutes les autres pages
+ **************************************************/
+
+div#deconnexion {
+    text-align: center;
+}
+
+div#enveloppe {
+    background-color: transparent;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#titre {
+    text-align: center;
+    letter-spacing: 5px;
+    background-color: #6E6E6E;
+    border: solid;
+}
+
+div#ensemble {
+    position: relative;
+}
+
+div#menugauche {
+    position: absolute;
+    width: 160px;
+}
+
+div#contenu {
+    position: absolute;
+    left: 200px;
+    width: 600px;
+    text-align: justify;
+}
+
+div#menudroite {
+    position: absolute;
+    left: 840px;
+    width: 160px;
+}
+
+select.attribution {
+    width: 260px;
+}
+
+input.changerrole {
+    font-size: 35px;
+}
+
+.textcentre {
+    text-align: center;
+}
+
+form#courriel {
+    text-align: center;
+}
+
+div#divacti {
+    margin-left: 23%;
+}
+
+fieldset.activi {
+    background-color: #6E6E6E;
+    width: 300px;
+}
+
+textarea#activitext {
+    background-color: white;
+    color: black;
+    height: 100px;
+    width: 294px;
+}
+
+textarea#courrielTexte {
+    width: 595px;
+    height: 200px;
+    background-color: black;
+    color: white;
+}
+
+input#note {
+    width: 50px;
+}
+
+input.date {
+    width: 130px;
+}

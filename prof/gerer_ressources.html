@@ -1,0 +1,191 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Gérer les ressources</title>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <script src="../javascript/main.js" charset="UTF-8"></script>
+        <script src="../javascript/gererRessources.js" charset="UTF-8"></script>
+    </head>
+    <body>
+        <div id="enveloppe">
+            <div id="titre">
+                <h1>INF2005: Programmation Web</h1>
+            </div>
+            <div id="ensemble">
+                <div id="menugauche">
+                    <h2>Menu</h2>
+                    <h3><a href="index.html">Accueil</a></h3>
+                    <h3><a href="charger_liste.html">Charger une liste d'étudiants</a></h3>
+                    <h3><a href="liste.html">Liste des étudiants</a></h3>
+                    <h3><a href="gerer_sections.html">Gérer les sections</a></h3>
+                    <h3><a href="gerer_ressources.html">Gérer les ressources</a></h3>
+                    <h3><a href="gerer_activites.html">Gérer les activités</a></h3>
+                    <h3><a href="attribution.html">Attribution des rôles</a></h3>
+                    <h3><a href="courriel.html">Envoyer un courriel au groupe</a></h3>
+                </div>
+                <div id="contenu">
+                    <h2>Gérer les ressources</h2>
+                    <div id="divacti">
+                        <fieldset class="activi">
+                            <legend>
+                                Ajouter une ressource
+                            </legend>
+                            <form action="">
+                                Étiquette:
+                                <br>
+                                <input type="text" name="etiquette" value="">
+                                <br>
+                                OU
+                                <br>
+                                Hyperlien:
+                                <br>
+                                <input type="text" name="hyperlien" value="">
+                                <br>
+                                OU
+                                <br>
+                                <input type="file" name="fichier">
+                                <br>
+                                Dans la section:
+                                <select name="sectionAjouter">
+                                    <option>Section 1</option>
+                                    <option>Section 2</option>
+                                    <option>Section 3</option>
+                                    <option>Section 4</option>
+                                </select>
+                                <br>
+                                <br>
+                                <input type="button" name="ajouter" value="Ajouter">
+                                <br>
+                            </form>
+                        </fieldset>
+                        <br>
+                        <fieldset class="activi">
+                            <legend>
+                                Supprimer une ou plusieurs ressources
+                            </legend>
+                            Section:
+                            <br>
+                            <select class="attribution" name="sectionSupprimer">
+                                <option>Section 1</option>
+                                <option>Section 2</option>
+                                <option>Section 3</option>
+                                <option>Section 4</option>
+                            </select>
+                            <select class="attribution" name="ressourceSupprimer" multiple="multiple" size="10">
+                                <option>Ressource 1</option>
+                                <option>Ressource 2</option>
+                                <option>Ressource 3</option>
+                                <option>Ressource 4</option>
+                                <option>Ressource 5</option>
+                                <option>Ressource 6</option>
+                                <option>Ressource 7</option>
+                                <option>Ressource 8</option>
+                            </select>
+                            <br>
+                            <br>
+                            <input type="button" name="supprimer" value="Supprimer">
+                            <br>
+                        </fieldset>
+                        <br>
+                        <fieldset class="activi">
+                            <legend>
+                                Déplacer une ou plusieurs ressources
+                            </legend>
+                            Section:
+                            <br>
+                            <select class="attribution" name="sectionDeplacer">
+                                <option>Section 1</option>
+                                <option>Section 2</option>
+                                <option>Section 3</option>
+                                <option>Section 4</option>
+                            </select>
+                            <br>
+                            <select class="attribution" name="ressourceDeplacer" multiple="multiple" size="10">
+                                <option>Ressource 1</option>
+                                <option>Ressource 2</option>
+                                <option>Ressource 3</option>
+                                <option>Ressource 4</option>
+                                <option>Ressource 5</option>
+                                <option>Ressource 6</option>
+                                <option>Ressource 7</option>
+                                <option>Ressource 8</option>
+                            </select>
+                            <br>
+                            Déplacer la ou les ressources dans:
+                            <br>
+                            <select name="sectionDeplacerDans">
+                                <option>Section 1</option>
+                                <option>Section 2</option>
+                                <option>Section 3</option>
+                                <option>Section 4</option>
+                            </select>
+                            <br>
+                            <br>
+                            <input type="button" name="deplacer" value="Déplacer">
+                            <br>
+                        </fieldset>
+                        <br>
+                        <fieldset class="activi">
+                            <legend>
+                                Modifier une ressource
+                            </legend>
+                            Section:
+                            <br>
+                            <select class="attribution" name="sectionModifier">
+                                <option>Section 1</option>
+                                <option>Section 2</option>
+                                <option>Section 3</option>
+                                <option>Section 4</option>
+                            </select>
+                            <select class="attribution" name="ressourceModifier" size="10">
+                                <option>Ressource 1</option>
+                                <option>Ressource 2</option>
+                                <option>Ressource 3</option>
+                                <option>Ressource 4</option>
+                                <option>Ressource 5</option>
+                                <option>Ressource 6</option>
+                                <option>Ressource 7</option>
+                                <option>Ressource 8</option>
+                            </select>
+                            <br>
+                            <br>
+                            <span class="afficherGrasSouligneBleu">Modifier par:</span>
+                            <br>
+                            Étiquette:
+                            <br>
+                            <input type="text" name="etiquetteModifier" value="">
+                            <br>
+                            OU
+                            <br>
+                            Hyperlien:
+                            <br>
+                            <input type="text" name="hyperlienModifier" value="">
+                            <br>
+                            OU
+                            <br>
+                            <input type="file" name="fichierModifier">
+                            <br>
+                            <br>
+                            <input type="button" name="modifier" value="Modifier">
+                            <br>
+                        </fieldset>
+                    </div>
+                </div>
+                <div id="menudroite">
+                    <h2>Bienvenue</h2>
+                    <span>Bienvenue,</span>
+                    <br>
+                    <span id="bienvenue"></span>
+                    <br>
+                    <br>
+                    <input type="button" name="deconnexion" value="Déconnexion" onclick="deconnexion();">
+                </div>
+            </div>
+        </div>
+        <script>
+            afficherNom();
+        </script>
+    </body>
+</html>

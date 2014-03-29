@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Gérer les activités</title>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <script src="../javascript/main.js" charset="UTF-8"></script>
+        <script src="../javascript/gererActivites.js" charset="UTF-8"></script>
+    </head>
+    <body>
+        <div id="enveloppe">
+            <div id="titre">
+                <h1>INF2005: Programmation Web</h1>
+            </div>
+            <div id="ensemble">
+                <div id="menugauche">
+                    <h2>Menu</h2>
+                    <h3><a href="index.html">Accueil</a></h3>
+                    <h3><a href="liste.html">Liste des étudiants</a></h3>
+                    <h3><a href="gerer_sections.html">Gérer les sections</a></h3>
+                    <h3><a href="gerer_ressources.html">Gérer les ressources</a></h3>
+                    <h3><a href="gerer_activites.html">Gérer les activités</a></h3>
+                    <h3><a href="courriel.html">Envoyer un courriel au groupe</a></h3>
+                </div>
+                <div id="contenu">
+                    <h2>Gérer les activités:</h2>
+                    <div id="divacti">
+                        <form id="activi" action="">
+                            <fieldset class="activi">
+                                <legend>
+                                    Ajouter un devoir
+                                </legend>
+                                Nom:
+                                <br>
+                                <input type="text" name="nom" value="">
+                                <br>
+                                Description (facultative):
+                                <br>
+                                <textarea id="activitext" name="description" rows="1" cols="1"></textarea>
+                                <br>
+                                Note maximale:
+                                <br>
+                                <input id="note" type="text" name="noteMaximale" value="">
+                                <br>
+                                Taille maximale du fichier (en Mo):
+                                <br>
+                                <input id="taillemaximale" type="text" name="tailleMaximale" value="">
+                                <br>
+                                Date de disponibilité (facultative):
+                                <br>
+                                <input class="date" type="text" name="dateDisponibilite" value="">
+                                <br>
+                                Date de remise:
+                                <br>
+                                <input class="date" type="text" name="dateRemise" value="">
+                                <br>
+                                <br>
+                                <input type="submit" value="Ajouter">
+                            </fieldset>
+                        </form>
+                        <br>
+                        <fieldset class="activi">
+                            <legend>
+                                Supprimer un devoir
+                            </legend>
+                            Devoir:
+                            <select name="devoirSupprimer">
+                                <option>Devoir 1</option>
+                                <option>Devoir 2</option>
+                                <option>Devoir 3</option>
+                            </select>
+                            <br>
+                            <br>
+                            <input type="button" value="Supprimer">
+                        </fieldset>
+                        <br>
+                        <fieldset class="activi">
+                            <legend>
+                                Modifier un devoir
+                            </legend>
+                            Devoir:
+                            <select name="devoirModifier">
+                                <option>Devoir 1</option>
+                                <option>Devoir 2</option>
+                                <option>Devoir 3</option>
+                            </select>
+                            <br>
+                            <br>
+                            <span class="afficherGrasSouligneBleu">Modifier par:</span>
+                            <br>
+                            Nom:
+                            <br>
+                            <input type="text" name="nomModifier" value="">
+                            <br>
+                            Description (facultative):
+                            <br>
+                            <textarea id="activitext" name="descriptionModifier" rows="1" cols="1"></textarea>
+                            <br>
+                            Note maximale:
+                            <br>
+                            <input id="note" type="text" name="noteMaximaleModifier" value="">
+                            <br>
+                            Taille maximale du fichier (en Mo):
+                            <br>
+                            <input id="taillemaximale" type="text" name="tailleMaximaleModifier" value="">
+                            <br>
+                            Date de disponibilité (facultative):
+                            <br>
+                            <input class="date" type="text" name="dateDisponibiliteModifier" value="">
+                            <br>
+                            Date de remise:
+                            <br>
+                            <input class="date" type="text" name="dateRemiseModifier" value="">
+                            <br>
+                            <br>
+                            <input type="button" value="Modifier">
+                        </fieldset>
+                    </div>
+                </div>
+                <div id="menudroite">
+                    <h2>Bienvenue</h2>
+                    <span>Bienvenue,</span>
+                    <br>
+                    <span id="bienvenue"></span>
+                    <br>
+                    <br>
+                    <input type="button" name="deconnexion" value="Déconnexion" onclick="deconnexion();">
+                </div>
+            </div>
+        </div>
+        <script>
+            afficherNom();
+        </script>
+    </body>
+</html>

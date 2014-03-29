@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Liste des étudiants</title>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <script src="../javascript/main.js" charset="UTF-8"></script>
+        <script src="../javascript/liste.js" charset="UTF-8"></script>
+    </head>
+    <body>
+        <div id="enveloppe">
+            <div id="titre">
+                <h1>INF2005: Programmation Web</h1>
+            </div>
+            <div id="ensemble">
+                <div id="menugauche">
+                    <h2>Menu</h2>
+                    <h3><a href="index.html">Accueil</a></h3>
+                    <h3><a href="charger_liste.html">Charger une liste d'étudiants</a></h3>
+                    <h3><a href="liste.html">Liste des étudiants</a></h3>
+                    <h3><a href="gerer_sections.html">Gérer les sections</a></h3>
+                    <h3><a href="gerer_ressources.html">Gérer les ressources</a></h3>
+                    <h3><a href="gerer_activites.html">Gérer les activités</a></h3>
+                    <h3><a href="attribution.html">Attribution des rôles</a></h3>
+                    <h3><a href="courriel.html">Envoyer un courriel au groupe</a></h3>
+                </div>
+                <div id="contenu">
+                    <h2>Liste des étudiants</h2>
+                    <p>
+                        Ici, on va pouvoir avoir accès à la liste de tous les étudiants.
+                    </p>
+                </div>
+                <div id="menudroite">
+                    <h2>Bienvenue</h2>
+                    <span>Bienvenue,</span>
+                    <br>
+                    <span id="bienvenue"></span>
+                    <br>
+                    <br>
+                    <input type="button" name="deconnexion" value="Déconnexion" onclick="deconnexion();">
+                </div>
+            </div>
+        </div>
+        <script>
+            afficherNom();
+        </script>
+    </body>
+</html>

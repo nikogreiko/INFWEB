@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Accueil</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="javascript/authentification.js" charset="UTF-8"></script>
+    </head>
+    <body>
+        <div id="entete">
+            <h1>ACCUEIL</h1>
+        </div>
+        <div id="bigbox">
+            <div id="box1">
+                <div>
+                    <fieldset class="box1and2">
+                        <legend>
+                            Se connecter
+                        </legend>
+                        <form action="index.html">
+                            Courriel:
+                            <br>
+                            <input type="text" name="id" value="">
+                            <br>
+                            Mot de passe:
+                            <br>
+                            <input type="password" name="pass" value="">
+                            <br>
+                            <input type="submit" value="Connexion">
+                        </form>
+                        <br>
+                        <a class="authen" href="nouveaumdp.html">Demander un nouveau de mot de passe</a>
+                    </fieldset>
+                </div>
+                <br>
+                <div id="seconnecter">
+                    <fieldset class="box1and2">
+                        <legend>
+                            Se connecter en tant que...
+                        </legend>
+                        <a class="authen" href="etudiant/index.html">Étudiant</a>
+                        <br>
+                        <a class="authen" href="demo/index.html">Démonstrateur</a>
+                        <br>
+                        <a class="authen" href="prof/index.html">Professeur</a>
+                        <br>
+                    </fieldset>
+                </div>
+            </div>
+            <div id="box2">
+                <div>
+                    <fieldset class="box1and2">
+                        <legend>
+                            S'inscrire
+                        </legend>
+                        <form action="index.html">
+                            Prénom:
+                            <br>
+                            <input type="text" name="first" value="">
+                            <br>
+                            Nom:
+                            <br>
+                            <input type="text" name="last" value="">
+                            <br>
+                            Courriel:
+                            <br>
+                            <input type="text" name="email" value="">
+                            <br>
+                            Mot de passe:
+                            <br>
+                            <input type="password" name="signpass" value="">
+                            <br>
+                            Confirmation mot de passe:
+                            <br>
+                            <input type="password" name="confirmpass" value="" onpaste="return false;">
+                            <br>
+                            <br>
+                            <input type="submit" value="S'inscrire">
+                        </form>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

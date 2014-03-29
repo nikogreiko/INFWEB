@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Gérer les sections</title>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <script src="../javascript/main.js" charset="UTF-8"></script>
+        <script src="../javascript/gererSections.js" charset="UTF-8"></script>
+    </head>
+    <body>
+        <div id="enveloppe">
+            <div id="titre">
+                <h1>INF2005: Programmation Web</h1>
+            </div>
+            <div id="ensemble">
+                <div id="menugauche">
+                    <h2>Menu</h2>
+                    <h3><a href="index.html">Accueil</a></h3>
+                    <h3><a href="liste.html">Liste des étudiants</a></h3>
+                    <h3><a href="gerer_sections.html">Gérer les sections</a></h3>
+                    <h3><a href="gerer_ressources.html">Gérer les ressources</a></h3>
+                    <h3><a href="gerer_activites.html">Gérer les activités</a></h3>
+                    <h3><a href="courriel.html">Envoyer un courriel au groupe</a></h3>
+                </div>
+                <div id="contenu">
+                    <h2>Gérer les sections</h2>
+                    <div id="divacti">
+                        <fieldset class="activi">
+                            <legend>
+                                Ajouter une section
+                            </legend>
+                            Titre:
+                            <br>
+                            <input type="text" name="titre">
+                            <br>
+                            Description (facultative):
+                            <br>
+                            <input type="text" name="description">
+                            <br>
+                            <br>
+                            <input type="button" name="ajouter" value="Ajouter">
+                            <br>
+                        </fieldset>
+                        <br>
+                        <fieldset class="activi">
+                            <legend>
+                                Supprimer une section
+                            </legend>
+                            Section:
+                            <br>
+                            <select class="attribution" name="sectionSupprimer">
+                                <option>Section 1</option>
+                                <option>Section 2</option>
+                                <option>Section 3</option>
+                                <option>Section 4</option>
+                            </select>
+                            <br>
+                            <br>
+                            <input type="button" name="supprimer" value="Supprimer">
+                            <br>
+                        </fieldset>
+                        <br>
+                        <fieldset class="activi">
+                            <legend>
+                                Renommer une section
+                            </legend>
+                            Section:
+                            <br>
+                            <select class="attribution" name="sectionRenommer">
+                                <option>Section 1</option>
+                                <option>Section 2</option>
+                                <option>Section 3</option>
+                                <option>Section 4</option>
+                            </select>
+                            <br>
+                            Nouveau nom de la section:
+                            <br>
+                            <input name="nouveauNomSection">
+                            <br>
+                            <br>
+                            <input type="button" name="renommer" value="Renommer">
+                            <br>
+                        </fieldset>
+                    </div>
+                </div>
+                <div id="menudroite">
+                    <h2>Bienvenue</h2>
+                    <span>Bienvenue,</span>
+                    <br>
+                    <span id="bienvenue"></span>
+                    <br>
+                    <br>
+                    <input type="button" name="deconnexion" value="Déconnexion" onclick="deconnexion();">
+                </div>
+            </div>
+        </div>
+        <script>
+            afficherNom();
+        </script>
+    </body>
+</html>
